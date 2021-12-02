@@ -19,13 +19,8 @@ try {
             case "forward":
                 xPos = xPos + magnitude;
                 break;
-            case "down":
-                zPos = zPos + magnitude;
-                break;
-            case "up":
-                zPos = zPos + magnitude;
-                break;
             default:
+                zPos = zPos + magnitude;
                 break;
         }
         console.log("direction: ", direction);
