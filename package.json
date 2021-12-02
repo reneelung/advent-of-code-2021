@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "1.0.0",
+  "description": "My solutions for Advent of Code 2021",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reneelung/advent-of-code-2021.git"
+  },
+  "author": "Renee Lung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reneelung/advent-of-code-2021/issues"
+  },
+  "homepage": "https://github.com/reneelung/advent-of-code-2021#readme"
+}
