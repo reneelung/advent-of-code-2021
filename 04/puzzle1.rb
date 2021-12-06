@@ -99,15 +99,17 @@ play_bingo
 #   for each row, keep track of the row numbers
 #   for each column, keep track of the column numbers
 #   keep track of all the numbers on the board and the sum of all the numbers
-# draw a number
-# for each board:
-#   for each row, 
-#       check if the number is present in the row. if it is, remove from the row.
-#       check if row length = 0. if it is, record the board sum and drawn number
-#   for each column, 
-#       check if the column length = 0. if it is, return the sum of all the numbers on the board
-#   for each column, check if the number is present in the row. if it is, remove from the column.
-#   remove the number from the board and subtract it from the sum
-# for each board:
-#   for each row, check if row length = 0. if it is, return the sum of all the numbers on the board
-#   for each column, check if the column length = 9. if it is, return the sum of all the numbers on the board
+# if there is no winning board:
+#   draw a number
+#   for each board:
+#       if drawn_number is on the board, remove the number from the board and subtract it from the sum
+#       for each row, 
+#           check if the number is present in the row. if it is, remove from the row.
+#           check if row length = 0. if it is, record the board sum and drawn number
+#           record that a winning board was found
+#       for each column, 
+#           check if the number is present in the row. if it is, remove from the column.
+#           check if the column length = 0. if it is, record the board sum and drawn number
+#           record that a winning board was found
+# if there is a winning board:
+#   return the board sum * drawn number
