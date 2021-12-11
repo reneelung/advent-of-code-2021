@@ -5,11 +5,15 @@ cd $1
 touch input.txt testInput.txt puzzle1.rb puzzle2.rb
 
 cat > puzzle1.rb <<'_EOF'
-#!/usr/bin/env ruby\n\n
+#!/usr/bin/env ruby
 require('pry')
 INPUT_FILE = 'testInput.txt'
 _EOF
 
-echo "#!/usr/bin/env ruby" >> puzzle2.rb
+cat > puzzle2.rb <<'_EOF'
+#!/usr/bin/env ruby
+require('pry')
+INPUT_FILE = 'testInput.txt'
+_EOF
 
 chmod +ux puzzle*
